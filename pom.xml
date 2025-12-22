@@ -105,7 +105,7 @@
 					<configuration>
 						<verbose>true</verbose>
 						<fork>true</fork>
-						<executable>${Java21_Path}/bin/javac</executable>
+						<executable>C:/Program Files/Java/jdk-21/bin/javac</executable>
 						<compilerVersion>21</compilerVersion>
 					</configuration>
 				</plugin>
@@ -115,7 +115,7 @@
 					<version>3.5.4</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>testng.xml</suiteXmlFile>
+							<suiteXmlFile>amazontestng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>
