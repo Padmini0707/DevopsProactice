@@ -5,12 +5,14 @@ import org.openqa.selenium.WebDriver;
 public class HomePage {
 	
 	private WebDriver driver;
-	HomePage(WebDriver driver){
+	public HomePage(WebDriver driver){
 		this.driver=driver;
 	}
 	
 	public String verifyAmazonPage() {
 		return driver.getTitle();
 	}
+	
+	
 	
 }

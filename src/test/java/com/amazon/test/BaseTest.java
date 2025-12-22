@@ -7,9 +7,14 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
+import com.amazon.page.CartPage;
+import com.amazon.page.HomePage;
+
 public class BaseTest {
 
-	private static WebDriver driver=null;
+	 static WebDriver driver=null;
+	HomePage home=null;
+	CartPage cart=null;
 	
 	@BeforeClass
 	public void setUpBrowser() {
@@ -20,11 +25,12 @@ public class BaseTest {
 		
 		driver.get("https://www.amazon.com/");
 		
-		
+		home=new HomePage(driver);
+		cart=new CartPage(driver);
 	}
 	
 	@AfterClass
 	public void tearDown() {
-		
+		driver.quit();
 	}
 }

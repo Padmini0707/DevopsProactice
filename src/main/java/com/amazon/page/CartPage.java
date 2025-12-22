@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CartPage {
 	
 	private WebDriver driver;
-	CartPage(WebDriver driver){
+	public CartPage(WebDriver driver){
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
@@ -28,5 +28,8 @@ public class CartPage {
 		sign.click();
 	}
 	
+	public String verifyAmazonCartPage() {
+		return driver.getTitle();
+	}
 
 }
