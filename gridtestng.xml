@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SeleniumGridSuite" paralell="tests">
+	<test thread-count="5" name="ChromiumTest">
+		<parameter name="bname" value="Chrome"></parameter>
+		<classes>
+			<class name="com.amazon.test.SeleniumGridTest" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="FirfoxTest">
+		<parameter name="bname" value="Firefox"></parameter>
+		<classes>
+			<class name="com.amazon.test.SeleniumGridTest" />
+		</classes>
+	</test> <!--
+	Test -->
+	<test thread-count="5" name="EdgeTest">
+		<parameter name="bname" value="Edge"></parameter>
+		<classes>
+			<class name="com.amazon.test.SeleniumGridTest" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
