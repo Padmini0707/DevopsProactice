@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 public class AmazonParallelTest {
 	
-	//Amazon parallel test execution
 	static WebDriver driver=null;
 	
 	@Parameters({"bname"})
